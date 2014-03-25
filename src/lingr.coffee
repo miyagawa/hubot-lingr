@@ -24,8 +24,9 @@ class Lingr extends Adapter
 
     @name   = process.env.HUBOT_LINGR_BOT
     @secret = process.env.HUBOT_LINGR_SECRET
+    @endpoint = process.env.HUBOT_LINGR_ENDPOINT || "/hubot/lingr"
 
-    @robot.router.post "/hubot/lingr", (request, response) =>
+    @robot.router.post @endpoint, (request, response) =>
       @processEvent event for event in request.body.events
       response.writeHead 200, 'Content-Type': 'text/plain'
       response.end()
