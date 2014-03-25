@@ -1,0 +1,23 @@
+{
+  "name": "hubot-lingr",
+  "version": "0.0.0",
+  "description": "Hubot adapter for Lingr",
+  "main": "src/lingr.coffee",
+  "homepage": "https://github.com/miyagawa/hubot-lingr",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository" : {
+    "type": "git",
+    "url": "https://github.com/miyagawa/hubot-lingr.git"
+  },
+  "keywords": [
+    "hubot",
+    "lingr"
+  ],
+  "author": "Tatsuhiko Miyagawa <miyagawa@bulknews.net>",
+  "license": "MIT",
+  "dependencies": {
+    "coffeescript": ">= 1.1.0"
+  }
+}

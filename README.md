@@ -1,0 +1,3 @@
+# Hubot Lingr Adapter
+
+TBD
