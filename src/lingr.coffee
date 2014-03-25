@@ -33,15 +33,16 @@ class Lingr extends Adapter
     self.emit "connected"
 
   processEvent: (event) ->
-    if event.message and event.message.type == "user"
-      re = new RegExp('@' + @robot.name, 'i')
-      text = event.message.text.replace re, @robot.name
-      author =
-        speaker_id: event.message.speaker_id,
-        event_id: event.message.event_id
-      message = new TextMessage(author, text)
-      message.room = event.message.room
-      @receive message
+    switch event.message?.type
+      when "user"
+        re = new RegExp('@' + @robot.name, 'i')
+        text = event.message.text.replace re, @robot.name
+        author =
+          speaker_id: event.message.speaker_id
+          event_id: event.message.event_id
+        message = new TextMessage(author, text)
+        message.room = event.message.room
+        @receive message
     # TODO support enter/leave
 
 exports.use = (robot) ->
