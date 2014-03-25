@@ -1,6 +1,6 @@
 {
   "name": "hubot-lingr",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Hubot adapter for Lingr",
   "main": "src/lingr.coffee",
   "homepage": "https://github.com/miyagawa/hubot-lingr",
