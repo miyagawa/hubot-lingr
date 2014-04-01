@@ -2,6 +2,8 @@
 
 This is the [Lingr](http://lingr.com) adapter for Hubot that allows you to interact with the Lingr bots.
 
+![](http://dl.dropbox.com/u/135035/Screenshots/1kbwtcjnfma5.png)
+
 ## Installation
 
 * Add `hubot-lingr` as a dependency in `package.json`
@@ -21,6 +23,8 @@ You need the following environment variables to configure hubot:
 ### Bot Setup
 
 Once you run hubot with the configuration above, you should set `http://you.example.com/hubot/lingr` as an API callback on Lingr bot configuration screen.
+
+![](http://dl.dropbox.com/u/135035/Screenshots/sye6qpfwqh9_.png)
 
 ## Copyright
 
