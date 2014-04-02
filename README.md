@@ -16,15 +16,19 @@ This is the [Lingr](http://lingr.com) adapter for Hubot that allows you to inter
 
 You need the following environment variables to configure hubot:
 
-* `HUBOT_LINGR_BOT`: Name of your Lingr bot
+* `HUBOT_LINGR_BOT`: Bot id of your Lingr bot
 * `HUBOT_LINGR_SECRET`: Secret Key of your Lingr bot
-* `HUBOT_LINGR_ENDPOINT`: Optional: API path to serve Hubot commands. Defaults to `/hubot/lingr`
+* `HUBOT_LINGR_ENDPOINT`: (Optional) API path to serve Hubot commands. Defaults to `/hubot/lingr`
 
-### Bot Setup
+### Bot Settings
 
-Once you run hubot with the configuration above, you should set `http://you.example.com/hubot/lingr` as an API callback on Lingr bot configuration screen.
+Once you run hubot with the configuration above, you should set `http://you.example.com/hubot/lingr` as a callback URL on Lingr bot configuration screen.
 
 ![](http://dl.dropbox.com/u/135035/Screenshots/sye6qpfwqh9_.png)
+
+## License
+
+MIT License
 
 ## Copyright
 
